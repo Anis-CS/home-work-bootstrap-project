@@ -317,7 +317,6 @@ body{
     background: #FFFFFF;
     padding: 0;
     margin: auto;
-    position: relative;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -351,7 +350,7 @@ body{
 }
 .services_section .card .card-title span{
     color: var(--text-yellow);
-    margin-top: 0;
+    margin-top: -7px;
 }
 
 .services_section .card .card-body a {
@@ -367,9 +366,41 @@ body{
     font-size: 12px;
 }
 
+/* Section Media css */
 
+.media_section .media-section {
+    margin: 5rem;
+    position: relative;
+}
+
+.media_section .ratio {
+    display: block;
+    position: relative;
+}
+
+.media_section .video-des {
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    max-width: 65%;
+}
+
+.media_section .video-des h2 {
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 1;
+    padding: 1rem;
+    background: var(--bg-yellow);
+    color: var(--text-white);
+    border-radius: 5px;
+    margin: 0;
+}
+
+
+/* All Media Query CSS */
 
 @media (max-width: 991px) {
+    /* banner section css  */
     .banner_section .banner-content {
         margin-left: 3rem;
         width: 80%;
@@ -416,6 +447,19 @@ body{
         font-size: 40px;
         line-height: 50px;
     }
+
+    /* section media  */
+    .media_section .media-section {
+        margin: 3rem 1rem;
+    }
+    .media_section .video-des {
+        left: 15px;
+        max-width: 90%;
+    }
+    .media_section .video-des h2 {
+        font-size: 20px;
+        padding: 0.8rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -426,6 +470,7 @@ body{
     .header_section .nav-link {
         justify-content: center;
     }
+    /* section banner css  */
     .banner_section .banner-content {
         margin-left: 2rem;
         width: 90%;
@@ -434,6 +479,8 @@ body{
         margin-left: 1rem;
         margin-top: 4rem;
     }
+
+    /* section services css  */
     .services_section .our-services h2 {
         font-size: 32px;
         line-height: 40px;
@@ -446,6 +493,18 @@ body{
     .services_section .card .card-logo img {
         width: 30px;
         height: 30px;
+    }
+     /* section media  */
+    .media_section .media-section {
+        margin: 2rem 0.5rem;
+    }
+    .media_section .video-des {
+        left: 10px;
+        max-width: 95%;
+    }
+    .media_section .video-des h2 {
+        font-size: 14px;
+        padding: 0.6rem;
     }
 }
 
