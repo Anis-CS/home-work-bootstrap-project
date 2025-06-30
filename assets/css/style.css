@@ -20,6 +20,16 @@
 body{
      --primary-font: "Poppins", sans-serif;
 }
+h2{
+    font-weight: 600;
+    font-size: 51px;
+    line-height: 64px;
+}
+.section-title{
+    width: 154px;
+    height: 14px;
+    color: var(--text-yellow);
+}
 
  /* Top header section  */
 .header_section {
@@ -170,7 +180,7 @@ body{
     margin-left: 2.5rem;
     border: 1px solid var(--ancor-color);
 }
-.banner_section .banner-content .section-title{
+.banner_section .banner-content .section-heading{
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
@@ -214,13 +224,7 @@ body{
     object-fit: cover;
     border-radius: 5px;
 }
-.our_project_section .project-nav{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0%;
-    color: var(--text-yellow);
-}
+
 .our_project_section .project-title{
     padding-top: 15px;
     font-weight: 500;
@@ -276,21 +280,6 @@ body{
 }
 .services_section .our-services{
     margin: 5rem;
-}
-
-.services_section .our-services .section-tab{
-    color: var(--text-yellow);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0%;
-}
-
-.services_section .our-services h2{
-    font-weight: 600;
-    font-size: 55px;
-    line-height: 74px;
-    letter-spacing: 0%;
 }
 .services_section .card{
     border: 0.5px solid #E8E8E8CC;
@@ -396,6 +385,89 @@ body{
     margin: 0;
 }
 
+/* Testimonial section */
+
+.testimonial_section {
+    width: 100%;
+    height: auto;
+}
+
+.testimonial_section .testimonial-section {
+    margin:0 5rem;
+}
+
+.testimonial_section .card {
+    margin: 5rem 0;
+    padding: 0;
+    border: none;
+}
+.testimonial_section .carousel-indicators button {
+    background-color: var(--bg-dark);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+.testimonial_section .card img{
+    width: 100px;
+    display: block;
+}
+
+testimonial_section .card p{
+    padding: 0;
+}
+
+.testimonial_section .card .card-body {
+    padding: 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+}
+.testimonial_section .card .info-detail {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+}
+.testimonial_section .card .profile-details span{
+    font-weight: 600;
+    font-size: 12px;
+    color: #707070;
+}
+
+
+.testimonial_section .project-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.faq_section{
+    width: 100%;
+    height: auto;
+}
+.faq_section .faq-section{
+    margin:2rem 5rem;
+}
+.faq_section .accordion-heading h2{
+    font-size: 47px;
+}
+.accordion h2{
+    margin: 5px;
+}
+.accordion-button {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 0 15px;
+  border-radius: 8px !important; 
+  transition: all 0.3s ease;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+.accordion-button:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 /* All Media Query CSS */
 
@@ -450,7 +522,7 @@ body{
 
     /* section media  */
     .media_section .media-section {
-        margin: 3rem 1rem;
+        margin: 1rem 5rem;
     }
     .media_section .video-des {
         left: 15px;
@@ -459,6 +531,15 @@ body{
     .media_section .video-des h2 {
         font-size: 20px;
         padding: 0.8rem;
+    }
+
+    /* testimonial section  */
+    .testimonial_section .testimonial-section{
+        margin: 1rem 8rem;
+    }
+    .testimonial_section .card{
+        margin: 2rem 0;
+        padding: 0;
     }
 }
 
@@ -493,10 +574,6 @@ body{
     .services_section .card .card-logo img {
         width: 30px;
         height: 30px;
-    }
-     /* section media  */
-    .media_section .media-section {
-        margin: 2rem 0.5rem;
     }
     .media_section .video-des {
         left: 10px;
